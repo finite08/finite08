@@ -3,9 +3,10 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # Bot
+# create your own bot first (takes 1 minute to do it)
 
-TOKEN: Final = '7477804963:AAFhg3GpJQ_Q5jdGmIdNtam7PSvFdGjWHJE'
-BOT_USERNAME: Final = '@YUV1bot'
+TOKEN: Final = 'insert your own api key for your bot here'
+BOT_USERNAME: Final = '@insert your bot's telegram username here'
 
 # Commands
 
@@ -58,7 +59,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def error(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print(f'Update {update} caused error {context.error}')
 
-# not sure what this is
+# 
 
 if __name__ == '__main__':
     print('Starting bot...')
