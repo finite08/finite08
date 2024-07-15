@@ -2,7 +2,8 @@ import asyncio
 import requests
 import time
 
-# Corrected endpoint from Raydium API documentation
+# This script shows newly created liquidity pools added to Raydium DEX and gives us the transaction information about 30-45 minutes after it has been created, still too slow and needs optimizetions
+# Raydium DED's URL is where we GET the information from
 RAYDIUM_API_URL = "https://api.raydium.io/v2/main/pairs"
 
 
